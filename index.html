@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NexoComunidad | Gestion para organizaciones</title>
+    <meta
+      name="description"
+      content="NexoComunidad es una plataforma digital para administrar socios, asistencia, cuotas, multas, finanzas y reportes de organizaciones comunitarias."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="NexoComunidad inicio">
+        <span class="brand-mark">N</span>
+        <span>NexoComunidad</span>
+      </a>
+      <nav class="nav" aria-label="Principal">
+        <a href="#funciones">Funciones</a>
+        <a href="#demo">Demo</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Plataforma flexible para organizaciones</p>
+          <h1>Gestion simple, ordenada y transparente para tu comunidad.</h1>
+          <p class="hero-copy" id="heroCopy">
+            Administra socios, asistencia, cuotas, multas, finanzas y reportes
+            desde un solo lugar, adaptable a organizaciones comunitarias,
+            deportivas, culturales, religiosas y formativas.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#demo">Ver demo</a>
+            <a class="button secondary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">
+              Contactar por WhatsApp
+            </a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-label="Vista previa del sistema">
+          <img src="./assets/hero-dashboard.svg" alt="Panel digital de gestion para organizaciones" />
+        </div>
+      </section>
+
+      <section class="org-switch" aria-label="Adaptar mensaje">
+        <p>Adaptar presentacion a:</p>
+        <div class="switch-buttons">
+          <button type="button" data-org="general" class="active">General</button>
+          <button type="button" data-org="deportiva">Club deportivo</button>
+          <button type="button" data-org="cultural">Agrupacion cultural</button>
+          <button type="button" data-org="religiosa">Comunidad religiosa</button>
+          <button type="button" data-org="vecinal">Junta de vecinos</button>
+        </div>
+      </section>
+
+      <section class="section" id="problema">
+        <div class="section-heading">
+          <p class="eyebrow">El problema</p>
+          <h2>Muchas organizaciones aun trabajan con papel, planillas y mensajes dispersos.</h2>
+        </div>
+        <div class="problem-grid">
+          <article>
+            <h3>Informacion desordenada</h3>
+            <p>Socios, pagos y asistencia quedan repartidos entre cuadernos, hojas de calculo y conversaciones.</p>
+          </article>
+          <article>
+            <h3>Poca trazabilidad</h3>
+            <p>Cuesta saber quien asistio, que cuotas estan pendientes y como se mueven los recursos.</p>
+          </article>
+          <article>
+            <h3>Gestion lenta</h3>
+            <p>Los dirigentes pierden horas en tareas repetitivas que podrian automatizarse.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section alt" id="funciones">
+        <div class="section-heading">
+          <p class="eyebrow">Solucion</p>
+          <h2>Un sistema centralizado que se adapta al tipo de organizacion.</h2>
+        </div>
+        <div class="feature-grid">
+          <article>
+            <span>01</span>
+            <h3>Socios y miembros</h3>
+            <p>Registro de integrantes, estados, datos de contacto y roles internos.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Asistencia</h3>
+            <p>Control rapido de reuniones, entrenamientos, actividades o ceremonias.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Finanzas</h3>
+            <p>Seguimiento de ingresos, egresos, cuotas, multas y saldos pendientes.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Reportes</h3>
+            <p>Informacion clara para directivas, socios y procesos de rendicion.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section impact">
+        <div class="section-heading">
+          <p class="eyebrow">Impacto</p>
+          <h2>Tecnologia accesible para organizaciones que sostienen la vida comunitaria.</h2>
+        </div>
+        <div class="impact-list">
+          <p>Reduce tiempo administrativo y errores manuales.</p>
+          <p>Mejora la transparencia financiera y la confianza interna.</p>
+          <p>Permite que organizaciones pequenas accedan a herramientas digitales profesionales.</p>
+        </div>
+      </section>
+
+      <section class="demo" id="demo">
+        <div>
+          <p class="eyebrow">Demo para evaluacion</p>
+          <h2>Acceso preparado para el jurado</h2>
+          <p>
+            Esta version demostrativa permite conocer las principales funciones
+            de NexoComunidad sin bloquear la navegacion con solicitudes previas.
+          </p>
+        </div>
+        <div class="demo-box">
+          <p><strong>URL sugerida:</strong> <span data-config="publicUrl">nexocomunidad.pilageweb.cl</span></p>
+          <p><strong>Usuario demo:</strong> <span data-config="demoUser">demo@nexocomunidad.cl</span></p>
+          <p><strong>Contrasena:</strong> <span data-config="demoPassword">Demo2026</span></p>
+          <a class="button primary full" data-config="demoUrl" href="#" target="_blank" rel="noreferrer">
+            Entrar a la demo
+          </a>
+        </div>
+      </section>
+
+      <section class="section business">
+        <div class="section-heading">
+          <p class="eyebrow">Proyeccion</p>
+          <h2>Modelo escalable para distintas organizaciones.</h2>
+        </div>
+        <div class="business-grid">
+          <article>
+            <h3>Implementacion rapida</h3>
+            <p>Configuracion inicial segun el tipo de organizacion, sus miembros y reglas internas.</p>
+          </article>
+          <article>
+            <h3>Pago mensual o anual</h3>
+            <p>Modelo SaaS accesible para comunidades pequenas y escalable para instituciones con mas miembros.</p>
+          </article>
+          <article>
+            <h3>Marca adaptable</h3>
+            <p>Lenguaje, modulos y terminos pueden ajustarse a cada rubro sin reconstruir el sistema.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contacto">
+      <div>
+        <strong>NexoComunidad</strong>
+        <p>Proyecto desarrollado desde Calama por Pillage Web.</p>
+      </div>
+      <a class="button secondary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">
+        Solicitar implementacion
+      </a>
+    </footer>
+
+    <script src="./site-config.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,332 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+:root {
+  --primary: #17201d;
+  --secondary: #26302c;
+  --accent: #137c72;
+  --accent-dark: #0f655d;
+  --gold: #f3b84a;
+  --cream: #f7f8f5;
+  --wine: #7aa95c;
+
+  --bg: #f4f7fb;
+  --card: #ffffff;
+
+  --text: #1f2937;
+  --text-light: #6b7280;
+
+  --success: #16a34a;
+  --danger: #dc2626;
+  --warning: #f59e0b;
+
+  --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 76px;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1050;
+  background: linear-gradient(135deg, var(--primary), var(--secondary)) !important;
+  box-shadow: var(--shadow);
+  padding: 14px 22px;
+  border-bottom: 3px solid #7aa95c;
+}
+
+.navbar-logo {
+  display: inline-grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.82);
+  background: var(--accent);
+  color: #ffffff;
+  font-weight: 800;
+}
+
+/* =====================================
+   SIDEBAR
+===================================== */
+
+.sidebar-mobile {
+  background: linear-gradient(180deg, var(--primary), #20352f);
+  box-shadow: var(--shadow);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.sidebar-desktop {
+  width: 250px;
+  min-width: 250px;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  transition: 0.3s;
+  border-radius: 8px;
+  padding: 14px 16px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85) !important;
+}
+
+.nav-link i {
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  background: rgba(19, 124, 114, 0.22);
+  color: white !important;
+  padding-left: 22px;
+  transform: translateX(4px);
+}
+
+.offcanvas {
+  background: linear-gradient(180deg, var(--primary), #20352f);
+  width: 260px;
+}
+
+/* =====================================
+   LAYOUT
+===================================== */
+
+.main-content {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .sidebar-desktop {
+    position: fixed;
+    top: 76px;
+    left: 0;
+    width: 260px;
+    height: calc(100vh - 76px);
+    overflow-y: auto;
+    z-index: 1040;
+  }
+
+  .main-content {
+    margin-left: 260px;
+    width: calc(100% - 260px);
+  }
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 64px;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}
+
+/* =====================================
+   MODULOS Y CARDS
+===================================== */
+
+.module-section {
+  background: white;
+  padding: 35px;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 35px;
+}
+
+.module-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.module-section + .module-section {
+  margin-top: 40px;
+}
+
+.card {
+  border: none;
+  border-radius: 8px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  transition: 0.3s;
+  cursor: default;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-body {
+  padding: 24px;
+}
+
+.card-body h2 {
+  font-size: 38px;
+  font-weight: 700;
+  margin-top: 12px;
+}
+
+.card-title {
+  font-size: 15px;
+  opacity: 0.85;
+}
+
+h2 {
+  font-size: 34px;
+  font-weight: 700;
+  color: #17201d;
+  margin-bottom: 28px;
+}
+
+/* =====================================
+   GRAFICOS
+===================================== */
+
+.chart-container {
+  position: relative;
+  min-height: 320px;
+}
+
+canvas {
+  max-width: 100% !important;
+}
+
+/* =====================================
+   TABLAS
+===================================== */
+
+.table {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.table thead {
+  background: var(--primary);
+  color: white;
+}
+
+.table tbody tr {
+  transition: 0.2s;
+}
+
+.table tbody tr:hover {
+  background: rgba(19, 124, 114, 0.08);
+}
+
+.table td,
+.table th {
+  border-color: rgba(0, 0, 0, 0.05);
+}
+
+.table-responsive {
+  border-radius: 8px;
+  overflow-x: auto;
+}
+
+/* =====================================
+   FORMULARIOS Y BOTONES
+===================================== */
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  min-height: 48px;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #d9efec;
+  box-shadow: 0 0 0 0.2rem rgba(19, 124, 114, 0.16);
+}
+
+.btn {
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primary,
+.btn-success {
+  background-color: var(--accent) !important;
+  border-color: var(--accent) !important;
+}
+
+.btn-primary:hover,
+.btn-success:hover {
+  background-color: var(--accent-dark) !important;
+  border-color: var(--accent-dark) !important;
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.app-footer {
+  background: var(--primary);
+  color: #d9efec;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* =====================================
+   RESPONSIVE
+===================================== */
+
+@media (max-width: 768px) {
+  .sidebar-mobile {
+    min-height: auto !important;
+    padding: 15px !important;
+  }
+
+  .btn-mobile-full {
+    width: 100%;
+  }
+
+  .card-body h2 {
+    font-size: 28px;
+  }
+
+  .main-content {
+    width: 100% !important;
+    margin-left: 0 !important;
+    padding: 18px !important;
+  }
+
+  .module-section {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+}
+
