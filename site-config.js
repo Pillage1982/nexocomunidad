@@ -2,8 +2,8 @@ window.NEXO_CONFIG = {
   publicUrl: "nexocomunidad.pilageweb.cl",
   demoUrl: "./demo/",
   whatsappUrl: "https://wa.me/+56932328984",
-  demoUser: "demo@nexocomunidad.cl",
-  demoPassword: "Demo2026",
+  demoUser: "admin",
+  demoPassword: "admin123",
   defaultOrg: "general",
   copyByOrg: {
     general:
