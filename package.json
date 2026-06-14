@@ -1,0 +1,16 @@
+{
+  "name": "nexocomunidad",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Landing y demo de NexoComunidad para publicacion en Hostinger.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
