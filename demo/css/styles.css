@@ -54,15 +54,12 @@ body {
 }
 
 .navbar-logo {
-  display: inline-grid;
-  place-items: center;
   width: 42px;
   height: 42px;
   border-radius: 8px;
   border: 2px solid rgba(255, 255, 255, 0.82);
   background: var(--accent);
-  color: #ffffff;
-  font-weight: 800;
+  object-fit: cover;
 }
 
 /* =====================================

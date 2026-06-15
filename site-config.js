@@ -1,13 +1,13 @@
 window.NEXO_CONFIG = {
-  publicUrl: "nexocomunidad.pillageweb.cl",
+  publicUrl: "nexocomunidad.pilageweb.cl",
   demoUrl: "./demo/",
-  whatsappUrl: "https://wa.me/56900000000",
-  demoUser: "demo@nexocomunidad.cl",
-  demoPassword: "Demo2026",
+  whatsappUrl: "https://wa.me/+56932328984",
+  demoUser: "admin",
+  demoPassword: "admin123",
   defaultOrg: "general",
   copyByOrg: {
     general:
-      "NexoComunidad es una plataforma creada en Calama para ayudar a organizaciones comunitarias, culturales, deportivas y religiosas a digitalizar su gestion diaria desde una herramienta simple, segura y adaptable.",
+      "Administra socios, asistencia, cuotas, multas, finanzas y reportes desde un solo lugar, adaptable a organizaciones comunitarias, deportivas, culturales, religiosas y formativas.",
     deportiva:
       "Administra deportistas, entrenamientos, asistencia, cuotas, multas y finanzas del club desde un solo lugar, con informacion clara para directivas y apoderados.",
     cultural:
