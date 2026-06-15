@@ -1,5 +1,5 @@
 window.NEXO_CONFIG = {
-  publicUrl: "nexocomunidad.pilageweb.cl",
+  publicUrl: "nexocomunidad.pillageweb.cl",
   demoUrl: "./demo/",
   whatsappUrl: "https://wa.me/+56932328984",
   demoUser: "admin",
