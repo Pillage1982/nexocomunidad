@@ -53,22 +53,12 @@ a {
   font-weight: 800;
 }
 
-.brand-logo,
-.brand-mark {
-  width: 36px;
-  height: 36px;
-  border-radius: 8px;
-}
-
-.brand-logo {
-  object-fit: cover;
-  background: white;
-  border: 1px solid var(--line);
-}
-
 .brand-mark {
   display: grid;
+  width: 36px;
+  height: 36px;
   place-items: center;
+  border-radius: 8px;
   background: var(--teal);
   color: white;
 }
@@ -110,18 +100,15 @@ h1,
 h2,
 h3,
 p {
-  overflow-wrap: normal;
-  word-break: normal;
-  hyphens: none;
+  overflow-wrap: anywhere;
 }
 
 h1 {
   max-width: 780px;
   margin: 0;
-  font-size: clamp(2.25rem, 5.6vw, 4.9rem);
-  line-height: 1.02;
+  font-size: clamp(2.75rem, 8vw, 6.4rem);
+  line-height: 0.94;
   letter-spacing: 0;
-  text-wrap: balance;
 }
 
 h2 {
@@ -380,8 +367,7 @@ article p,
   }
 
   h1 {
-    font-size: clamp(2.1rem, 9.5vw, 3.25rem);
-    line-height: 1.04;
+    font-size: clamp(2.45rem, 15vw, 4.2rem);
   }
 
   .problem-grid,

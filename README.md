@@ -1,6 +1,6 @@
-# NexoComunidad final
+# NexoComunidad postulacion
 
-Paquete listo para publicar en `nexocomunidad.pilageweb.cl`.
+Paquete listo para publicar en `nexocomunidad.pillageweb.cl`.
 
 ## Estructura
 
@@ -15,10 +15,10 @@ Paquete listo para publicar en `nexocomunidad.pilageweb.cl`.
 Sube todo el contenido de esta carpeta al directorio publico del subdominio.
 
 La landing quedara en:
-`https://nexocomunidad.pilageweb.cl/`
+`https://nexocomunidad.pillageweb.cl/`
 
 La demo quedara en:
-`https://nexocomunidad.pilageweb.cl/demo/`
+`https://nexocomunidad.pillageweb.cl/demo/`
 
 ## Antes de presentar
 

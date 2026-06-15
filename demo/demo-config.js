@@ -1,4 +1,4 @@
-window.API_URL = "https://club.pillageweb.cl";
+window.API_URL = "https://api.pillageweb.cl";
 
 window.DEMO_BRAND = {
   appName: "NexoComunidad Demo",

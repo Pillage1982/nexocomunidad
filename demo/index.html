@@ -21,7 +21,7 @@
     rel="stylesheet"
     href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
 </head>
 
 <body>
@@ -43,7 +43,7 @@
       </button>
 
       <span class="navbar-brand mb-0 h1 d-flex align-items-center gap-2">
-        <img src="img/logo.png" alt="NexoComunidad" class="navbar-logo">
+        <span class="navbar-logo navbar-logo-neutral" aria-hidden="true">N</span>
 
         NexoComunidad Demo
       </span>
@@ -55,7 +55,7 @@
           class="btn btn-danger btn-sm"
           onclick="logout()">
 
-          Cerrar sesión
+          Cerrar SesiÃ³n
         </button>
       </div>
     </div>
@@ -107,7 +107,7 @@
 
         <div class="offcanvas-header">
           <h5 class="offcanvas-title text-white">
-            Menú
+            MenÃº
           </h5>
 
           <button
@@ -160,7 +160,7 @@
           </h2>
 
           <div class="mb-3 px-2">
-            <label class="form-label">Nombre completo</label>
+            <label class="form-label">Nombre Completo</label>
             <select id="persona_id" class="form-select"></select>
           </div>
 
@@ -179,7 +179,7 @@
           </div>
 
           <div class="mb-3 px-2">
-            <label class="form-label">Minutos de atraso</label>
+            <label class="form-label">Minutos atraso</label>
 
             <input
               type="number"
@@ -201,7 +201,7 @@
         <!-- DASHBOARD -->
         <section id="dashboard" class="mt-4">
           <h2 class="mb-4">
-            Panel general de la organización
+            Panel General de la Organizacion
           </h2>
 
           <div class="row g-3">
@@ -295,7 +295,7 @@
         <!-- PERSONAS -->
         <section id="modulo_personas" class="module-section">
           <h2 id="titulo_personas" class="mt-5 mb-4">
-            Gestión de integrantes
+            GestiÃ³n de Integrantes
           </h2>
 
           <div id="form_personas" class="card p-4 shadow-sm border-0">
@@ -310,7 +310,7 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="form-label">Apellido paterno</label>
+                <label class="form-label">Apellido Paterno</label>
 
                 <input
                   type="text"
@@ -319,7 +319,7 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="form-label">Apellido materno</label>
+                <label class="form-label">Apellido Materno</label>
 
                 <input
                   type="text"
@@ -346,7 +346,7 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="form-label">Teléfono</label>
+                <label class="form-label">TelÃ©fono</label>
 
                 <input
                   type="text"
@@ -369,7 +369,7 @@
               class="btn btn-success"
               onclick="crearPersona()">
 
-              Guardar integrante
+              Guardar Integrante
             </button>
 
             <p id="respuesta_persona" class="mt-3"></p>
@@ -380,13 +380,13 @@
         <section id="eventos" class="module-section">
           <div id="modulo_eventos">
             <h2 id="titulo_eventos" class="mt-5 mb-4">
-              Gestión de actividades
+              Gestion de Actividades
             </h2>
 
             <div class="card p-4 shadow-sm border-0">
               <div class="row">
                 <div class="col-md-4 mb-3">
-                  <label class="form-label">Nombre de la actividad</label>
+                  <label class="form-label">Nombre Actividad</label>
 
                   <input
                     type="text"
@@ -403,11 +403,11 @@
                     </option>
 
                     <option value="partido">
-                      Presentación
+                      PresentaciÃ³n
                     </option>
 
                     <option value="reunion">
-                      Reunión
+                      ReuniÃ³n
                     </option>
                   </select>
                 </div>
@@ -422,7 +422,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Ubicación</label>
+                  <label class="form-label">UbicaciÃ³n</label>
 
                   <input
                     type="text"
@@ -431,7 +431,7 @@
                 </div>
 
                 <div class="col-md-6 mb-3">
-                  <label class="form-label">Descripción</label>
+                  <label class="form-label">DescripciÃ³n</label>
 
                   <input
                     type="text"
@@ -445,7 +445,7 @@
                 class="btn btn-primary"
                 onclick="crearEvento()">
 
-                Guardar actividad
+                Guardar Actividad
               </button>
             </div>
           </div>
@@ -457,9 +457,9 @@
                   <th>Nombre</th>
                   <th>Tipo</th>
                   <th>Fecha</th>
-                  <th>Ubicación</th>
+                  <th>UbicaciÃ³n</th>
                   <th>Acciones</th>
-                  <th>Descripción</th>
+                  <th>DescripciÃ³n</th>
                 </tr>
               </thead>
 
@@ -471,7 +471,7 @@
         <!-- PAGOS -->
         <section id="modulo_pagos" class="module-section">
           <h2 id="titulo_pagos" class="mt-5 mb-4">
-            Gestión de pagos
+            GestiÃ³n de Pagos
           </h2>
 
           <div class="card p-4 shadow-sm border-0">
@@ -491,7 +491,7 @@
               </div>
 
               <div class="col-md-4 mb-3">
-                <label class="form-label">Método de pago</label>
+                <label class="form-label">MÃ©todo Pago</label>
 
                 <select id="pago_metodo" class="form-select">
                   <option value="efectivo">
@@ -503,7 +503,7 @@
                   </option>
 
                   <option value="debito">
-                    Débito
+                    DÃ©bito
                   </option>
                 </select>
               </div>
@@ -514,7 +514,7 @@
               class="btn btn-success"
               onclick="crearPago()">
 
-              Guardar pago
+              Guardar Pago
             </button>
           </div>
         </section>
@@ -525,7 +525,7 @@
               <tr>
                 <th>Integrante</th>
                 <th>Monto</th>
-                <th>Método</th>
+                <th>MÃ©todo</th>
                 <th>Fecha</th>
                 <th>Acciones</th>
               </tr>
@@ -539,12 +539,12 @@
           <table class="table table-bordered table-striped table-hover align-middle">
             <thead class="table-dark">
               <tr>
-                <th>Nombre completo</th>
+                <th>Nombre Completo</th>
                 <th>RUT</th>
                 <th>Email</th>
-                <th>Teléfono</th>
+                <th>TelÃ©fono</th>
                 <th>Edad</th>
-                <th>Categoría</th>
+                <th>CategorÃ­a</th>
                 <th>Acciones</th>
               </tr>
             </thead>
@@ -563,7 +563,7 @@
             <table class="table table-striped table-bordered">
               <thead class="table-dark">
                 <tr>
-                  <th>Nombre completo</th>
+                  <th>Nombre Completo</th>
                   <th>Evento</th>
                   <th>Estado</th>
                   <th>Minutos</th>
@@ -586,7 +586,7 @@
               <table class="table table-bordered table-striped">
                 <thead class="table-danger">
                   <tr>
-                    <th>Nombre completo</th>
+                    <th>Nombre Completo</th>
                     <th>Monto</th>
                     <th>Motivo</th>
                     <th>Fecha</th>
@@ -603,7 +603,7 @@
         <section id="finanzas">
           <div id="modulo_finanzas" class="module-section">
             <h2 id="titulo_finanzas" class="mt-5 mb-3">
-              Estado financiero
+              Estado Financiero
             </h2>
 
             <div class="mb-3">
@@ -623,7 +623,7 @@
                       <th>Integrante</th>
                       <th>Monto</th>
                       <th>Mes</th>
-                      <th>Año</th>
+                      <th>AÃ±o</th>
                       <th>Vencimiento</th>
                       <th>Estado</th>
                     </tr>
@@ -638,7 +638,7 @@
               <table class="table table-bordered">
                 <thead class="table-dark">
                   <tr>
-                    <th>Nombre completo</th>
+                    <th>Nombre Completo</th>
                     <th>Total Multas</th>
                     <th>Total Cuotas</th>
                     <th>Total Pagado</th>
@@ -657,7 +657,7 @@
 
   <footer class="app-footer text-center py-3 mt-5">
     <small>
-      NexoComunidad Demo | Proyecto desarrollado por <a href="https://pillageweb.cl" target="_blank" rel="noreferrer">Pillage Web</a>
+      NexoComunidad Demo | Proyecto desarrollado por Pillage Web
     </small>
   </footer>
 
@@ -674,5 +674,3 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
-

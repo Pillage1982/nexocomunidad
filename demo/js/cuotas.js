@@ -5,7 +5,7 @@
 function generarCuotasMensuales() {
 
   const confirmar = confirm(
-    '¿Deseas generar las cuotas mensuales para todos los socios activos?'
+    '¿Deseas generar las cuotas mensuales para todos los integrantes activos?'
   );
 
   if (!confirmar) return;
