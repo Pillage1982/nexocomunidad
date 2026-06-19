@@ -1,12 +1,12 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="es">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>NexoComunidad | Gestión para organizaciones</title>
+    <title>NexoComunidad | Software de gestion para organizaciones</title>
     <meta
       name="description"
-      content="NexoComunidad es una plataforma digital para administrar socios, asistencia, cuotas, multas, finanzas y reportes de organizaciones comunitarias."
+      content="NexoComunidad es un software comercial para administrar socios, asistencia, pagos, multas, finanzas y reportes de organizaciones comunitarias."
     />
     <link rel="icon" type="image/png" href="./demo/img/favicon.png" />
     <link rel="stylesheet" href="./styles.css" />
@@ -18,143 +18,248 @@
         <span>NexoComunidad</span>
       </a>
       <nav class="nav" aria-label="Principal">
-        <a href="#funciones">Funciones</a>
-        <a href="#demo">Demo</a>
+        <a href="#producto">Producto</a>
+        <a href="#modulos">Modulos</a>
+        <a href="#planes">Planes</a>
         <a href="#contacto">Contacto</a>
       </nav>
+      <a class="header-cta" data-config="demoUrl" href="./demo/" target="_blank" rel="noreferrer">Abrir demo</a>
     </header>
 
     <main id="inicio">
       <section class="hero">
         <div class="hero-content">
-          <p class="eyebrow">Plataforma flexible para organizaciones</p>
-          <h1>Gestión simple y transparente para tu comunidad.</h1>
-          <p class="hero-copy" id="heroCopy">
-            Administra socios, asistencia, cuotas, multas, finanzas y reportes
-            desde un solo lugar, adaptable a organizaciones comunitarias,
-            deportivas, culturales, religiosas y formativas.
+          <p class="eyebrow">Software de gestion para comunidades</p>
+          <h1>Administra tu organizacion como una plataforma profesional.</h1>
+          <p class="hero-copy">
+            Controla integrantes, asistencia, cuotas, multas, pagos y reportes en un sistema simple, ordenado y listo para operar.
           </p>
           <div class="hero-actions">
-            <a class="button primary" href="#demo">Ver demo</a>
-            <a class="button secondary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">
-              Contactar por WhatsApp
-            </a>
+            <a class="button primary" data-config="demoUrl" href="./demo/" target="_blank" rel="noreferrer">Probar demo</a>
+            <a class="button secondary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">Solicitar implementacion</a>
+          </div>
+          <div class="trust-row" aria-label="Indicadores del producto">
+            <span>Configuracion por rubro</span>
+            <span>Acceso web responsive</span>
+            <span>Reportes para directiva</span>
           </div>
         </div>
-        <div class="hero-visual" aria-label="Identidad visual de NexoComunidad">
-          <img src="./demo/img/banner.png" alt="Banner de NexoComunidad" />
+
+        <div class="product-shell" aria-label="Vista previa del panel NexoComunidad">
+          <div class="app-topbar">
+            <div>
+              <strong>Panel general</strong>
+              <span>Club Union Norte</span>
+            </div>
+            <a data-config="demoUrl" href="./demo/" target="_blank" rel="noreferrer">Demo activa</a>
+          </div>
+          <div class="app-body">
+            <aside class="app-sidebar" aria-label="Modulos">
+              <span class="active">Dashboard</span>
+              <span>Integrantes</span>
+              <span>Asistencias</span>
+              <span>Pagos</span>
+              <span>Finanzas</span>
+            </aside>
+            <div class="app-main">
+              <div class="metrics-grid">
+                <article>
+                  <span>Integrantes</span>
+                  <strong>128</strong>
+                  <small>+12 este mes</small>
+                </article>
+                <article>
+                  <span>Asistencia</span>
+                  <strong>87%</strong>
+                  <small>Ultima actividad</small>
+                </article>
+                <article>
+                  <span>Recaudado</span>
+                  <strong>$840k</strong>
+                  <small>Cuotas y pagos</small>
+                </article>
+              </div>
+              <div class="workspace-grid">
+                <section class="panel activity-panel" aria-label="Actividades recientes">
+                  <div class="panel-header">
+                    <strong>Actividades</strong>
+                    <span>Hoy</span>
+                  </div>
+                  <div class="activity-row">
+                    <span class="status-dot success"></span>
+                    <div>
+                      <strong>Entrenamiento formativo</strong>
+                      <small>42 presentes registrados</small>
+                    </div>
+                  </div>
+                  <div class="activity-row">
+                    <span class="status-dot warning"></span>
+                    <div>
+                      <strong>Cuotas pendientes</strong>
+                      <small>18 integrantes por regularizar</small>
+                    </div>
+                  </div>
+                  <div class="activity-row">
+                    <span class="status-dot info"></span>
+                    <div>
+                      <strong>Reporte mensual</strong>
+                      <small>Listo para compartir</small>
+                    </div>
+                  </div>
+                </section>
+                <section class="panel finance-panel" aria-label="Resumen financiero">
+                  <div class="panel-header">
+                    <strong>Flujo mensual</strong>
+                    <span>Junio</span>
+                  </div>
+                  <div class="bar-chart" aria-hidden="true">
+                    <span style="height: 48%"></span>
+                    <span style="height: 72%"></span>
+                    <span style="height: 56%"></span>
+                    <span style="height: 88%"></span>
+                    <span style="height: 64%"></span>
+                  </div>
+                  <p>$1.240.000 administrados con trazabilidad.</p>
+                </section>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="org-switch" aria-label="Adaptar mensaje">
-        <p>Adaptar presentación a:</p>
-        <div class="switch-buttons">
-          <button type="button" data-org="general" class="active">General</button>
-          <button type="button" data-org="deportiva">Club deportivo</button>
-          <button type="button" data-org="cultural">Agrupación cultural</button>
-          <button type="button" data-org="religiosa">Comunidad religiosa</button>
-          <button type="button" data-org="vecinal">Junta de vecinos</button>
-        </div>
-      </section>
-
-      <section class="section" id="problema">
+      <section class="section product-section" id="producto">
         <div class="section-heading">
-          <p class="eyebrow">El problema</p>
-          <h2>Muchas organizaciones aún trabajan con papel, planillas y mensajes dispersos.</h2>
-        </div>
-        <div class="problem-grid">
-          <article>
-            <h3>Información desordenada</h3>
-            <p>Socios, pagos y asistencia quedan repartidos entre cuadernos, hojas de cálculo y conversaciones.</p>
-          </article>
-          <article>
-            <h3>Poca trazabilidad</h3>
-            <p>Cuesta saber quién asistió, qué cuotas están pendientes y cómo se mueven los recursos.</p>
-          </article>
-          <article>
-            <h3>Gestión lenta</h3>
-            <p>Los dirigentes pierden horas en tareas repetitivas que podrían automatizarse.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section alt" id="funciones">
-        <div class="section-heading">
-          <p class="eyebrow">Solución</p>
-          <h2>Un sistema centralizado que se adapta al tipo de organización.</h2>
-        </div>
-        <div class="feature-grid">
-          <article>
-            <span>01</span>
-            <h3>Socios y miembros</h3>
-            <p>Registro de integrantes, estados, datos de contacto y roles internos.</p>
-          </article>
-          <article>
-            <span>02</span>
-            <h3>Asistencia</h3>
-            <p>Control rápido de reuniones, entrenamientos, actividades o ceremonias.</p>
-          </article>
-          <article>
-            <span>03</span>
-            <h3>Finanzas</h3>
-            <p>Seguimiento de ingresos, egresos, cuotas, multas y saldos pendientes.</p>
-          </article>
-          <article>
-            <span>04</span>
-            <h3>Reportes</h3>
-            <p>Información clara para directivas, socios y procesos de rendición.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section impact">
-        <div class="section-heading">
-          <p class="eyebrow">Impacto</p>
-          <h2>Tecnología accesible para organizaciones que sostienen la vida comunitaria.</h2>
-        </div>
-        <div class="impact-list">
-          <p>Reduce tiempo administrativo y errores manuales.</p>
-          <p>Mejora la transparencia financiera y la confianza interna.</p>
-          <p>Permite que organizaciones pequeñas accedan a herramientas digitales profesionales.</p>
-        </div>
-      </section>
-
-      <section class="demo" id="demo">
-        <div>
-          <p class="eyebrow">Demo para evaluación</p>
-          <h2>Acceso preparado para el jurado</h2>
+          <p class="eyebrow">Producto</p>
+          <h2>Un centro de operaciones para organizaciones que necesitan orden, control y confianza.</h2>
           <p>
-            Esta versión demostrativa permite conocer las principales funciones
-            de NexoComunidad sin bloquear la navegación con solicitudes previas.
+            NexoComunidad reemplaza planillas dispersas y registros manuales por un flujo unico: crear integrantes, registrar actividades, controlar pagos y obtener reportes sin depender de archivos sueltos.
           </p>
         </div>
-        <div class="demo-box">
-          <p><strong>URL sugerida:</strong> <span data-config="publicUrl">nexocomunidad.pilageweb.cl</span></p>
-          <p><strong>Usuario demo:</strong> <span data-config="demoUser">demo@nexocomunidad.cl</span></p>
-          <p><strong>Contraseña:</strong> <span data-config="demoPassword">Demo2026</span></p>
-          <a class="button primary full" data-config="demoUrl" href="#" target="_blank" rel="noreferrer">
-            Entrar a la demo
-          </a>
+        <div class="value-grid">
+          <article>
+            <span class="value-icon">01</span>
+            <h3>Operacion diaria</h3>
+            <p>Gestiona asistencia, datos de contacto, actividades y pagos desde una interfaz pensada para uso frecuente.</p>
+          </article>
+          <article>
+            <span class="value-icon">02</span>
+            <h3>Informacion clara</h3>
+            <p>Visualiza deuda, recaudacion, multas y participacion para tomar decisiones con datos actualizados.</p>
+          </article>
+          <article>
+            <span class="value-icon">03</span>
+            <h3>Adaptable por rubro</h3>
+            <p>Ajusta nombres, modulos y reglas segun el tipo de comunidad: deportiva, cultural, vecinal, religiosa o formativa.</p>
+          </article>
         </div>
       </section>
 
-      <section class="section business">
+      <section class="section modules-section" id="modulos">
         <div class="section-heading">
-          <p class="eyebrow">Proyección</p>
-          <h2>Modelo escalable para distintas organizaciones.</h2>
+          <p class="eyebrow">Modulos</p>
+          <h2>Todo lo necesario para administrar la comunidad en un solo lugar.</h2>
         </div>
-        <div class="business-grid">
+        <div class="module-layout">
+          <article class="module-card highlighted">
+            <span>Dashboard</span>
+            <h3>Resumen ejecutivo</h3>
+            <p>Indicadores de integrantes, pagos, deuda y actividad para revisar el estado real de la organizacion.</p>
+          </article>
+          <article class="module-card">
+            <span>Integrantes</span>
+            <h3>Base de miembros</h3>
+            <p>Registro ordenado con datos personales, contacto, categorias y estados internos.</p>
+          </article>
+          <article class="module-card">
+            <span>Asistencias</span>
+            <h3>Control de actividades</h3>
+            <p>Marca presentes, atrasos y ausencias en reuniones, entrenamientos, ensayos o ceremonias.</p>
+          </article>
+          <article class="module-card">
+            <span>Pagos</span>
+            <h3>Cuotas y recaudacion</h3>
+            <p>Registra ingresos por integrante, metodo de pago y fecha para mantener trazabilidad.</p>
+          </article>
+          <article class="module-card">
+            <span>Finanzas</span>
+            <h3>Deuda y reportes</h3>
+            <p>Consulta saldos, multas, cuotas pendientes y totales para directivas y rendiciones.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="demo-strip" id="demo">
+        <div>
+          <p class="eyebrow">Demo comercial</p>
+          <h2>Prueba el flujo completo antes de implementar.</h2>
+          <p>
+            La demo permite entrar al panel, revisar modulos y validar si el sistema calza con tu organizacion.
+          </p>
+        </div>
+        <div class="credentials-box">
+          <div>
+            <span>Sitio</span>
+            <strong data-config="publicUrl">nexocomunidad.pillageweb.cl</strong>
+          </div>
+          <div>
+            <span>Usuario</span>
+            <strong data-config="demoUser">admin</strong>
+          </div>
+          <div>
+            <span>Clave</span>
+            <strong data-config="demoPassword">admin123</strong>
+          </div>
+          <a class="button primary full" data-config="demoUrl" href="./demo/" target="_blank" rel="noreferrer">Entrar a la demo</a>
+        </div>
+      </section>
+
+      <section class="section workflow-section">
+        <div class="section-heading compact">
+          <p class="eyebrow">Implementacion</p>
+          <h2>De la primera reunion al uso real, sin volver a partir desde cero.</h2>
+        </div>
+        <div class="timeline">
           <article>
-            <h3>Implementación rápida</h3>
-            <p>Configuración inicial según el tipo de organización, sus miembros y reglas internas.</p>
+            <span>1</span>
+            <h3>Diagnostico</h3>
+            <p>Se revisan reglas de cuotas, tipos de integrantes y actividades frecuentes.</p>
           </article>
           <article>
-            <h3>Pago mensual o anual</h3>
-            <p>Modelo SaaS accesible para comunidades pequeñas y escalable para instituciones con más miembros.</p>
+            <span>2</span>
+            <h3>Configuracion</h3>
+            <p>Se ajusta el lenguaje del sistema y se cargan los datos iniciales.</p>
           </article>
           <article>
-            <h3>Marca adaptable</h3>
-            <p>Lenguaje, módulos y términos pueden ajustarse a cada rubro sin reconstruir el sistema.</p>
+            <span>3</span>
+            <h3>Puesta en marcha</h3>
+            <p>La directiva comienza a registrar asistencia, pagos y reportes en la plataforma.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section pricing-section" id="planes">
+        <div class="section-heading">
+          <p class="eyebrow">Planes</p>
+          <h2>Una base comercial clara para crecer con cada organizacion.</h2>
+        </div>
+        <div class="pricing-grid">
+          <article>
+            <span>Inicial</span>
+            <h3>Para comunidades pequenas</h3>
+            <p>Gestion esencial de integrantes, asistencia y pagos.</p>
+            <strong>Implementacion simple</strong>
+          </article>
+          <article class="featured-plan">
+            <span>Gestion</span>
+            <h3>Para directivas activas</h3>
+            <p>Modulos completos, reportes, finanzas y configuracion por rubro.</p>
+            <strong>Plan recomendado</strong>
+          </article>
+          <article>
+            <span>Institucional</span>
+            <h3>Para redes o sedes</h3>
+            <p>Adaptaciones, carga inicial ampliada y acompaniamiento operativo.</p>
+            <strong>Escalable</strong>
           </article>
         </div>
       </section>
@@ -163,16 +268,15 @@
     <footer class="footer" id="contacto">
       <div>
         <strong>NexoComunidad</strong>
-        <p>Proyecto desarrollado desde Calama por <a href="https://pillageweb.cl" target="_blank" rel="noreferrer">Pillage Web</a>.</p>
+        <p>Software de gestion desarrollado desde Calama por <a href="https://pillageweb.cl" target="_blank" rel="noreferrer">Pillage Web</a>.</p>
       </div>
-      <a class="button secondary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">
-        Solicitar implementación
-      </a>
+      <div class="footer-actions">
+        <a class="button secondary" data-config="demoUrl" href="./demo/" target="_blank" rel="noreferrer">Ver demo</a>
+        <a class="button primary" data-config="whatsappUrl" href="#" target="_blank" rel="noreferrer">Hablar por WhatsApp</a>
+      </div>
     </footer>
 
     <script src="./site-config.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
-
-
